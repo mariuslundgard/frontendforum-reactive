@@ -1,0 +1,14 @@
+#root {
+  padding: 20px;
+}
+
+.sum {
+  border-bottom: 3px double;
+}
+
+input {
+  border: 1px solid #ccc;
+  font: inherit;
+  width: 50px;
+  text-align: center;
+}

@@ -1,0 +1,4 @@
+/dist/webpack.stats.json
+/node_modules
+/npm-debug*
+/yarn-error*

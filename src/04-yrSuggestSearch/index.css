@@ -1,0 +1,40 @@
+.searchForm {
+  background: #eee;
+}
+
+.searchForm input[name="q"] {
+  -webkit-appearance: none;
+  background: none;
+  font: inherit;
+  border: 0;
+  outline: none;
+  padding: 13px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.searchForm input[name="q"]:focus {
+  background: #def;
+  color: #09f;
+}
+
+.searchResult {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.searchResult:hover {
+  background: #09f;
+  color: #fff;
+}
+
+.searchResult h3 {
+  font: inherit;
+  font-weight: 700;
+  margin: 0;
+}
+
+.searchResult__categoryName {
+  font-size: 16px;
+}

@@ -1,0 +1,165 @@
+#root {
+  padding: 0;
+}
+
+.example {
+  /*padding: 10px;*/
+  display: flex;
+  /*flex-direction: column;*/
+}
+
+.dialogList {
+  position: relative;
+  /*background: #def;*/
+  flex: 1;
+  /*padding: 10px;*/
+  /*overflow: auto;*/
+  padding: 0 10px;
+}
+
+.dialogList:after {
+  clear: both;
+  display: block;
+  content: '';
+  height: 90px;
+}
+
+.dialogList > h1 {
+  font: inherit;
+  text-align: center;
+}
+
+.message {
+  clear: both;
+  float: left;
+  background: #eee;
+  max-width: 400px;
+  padding: 4px 10px;
+  margin: 5px 10px;
+  border-radius: 10px;
+}
+
+.message p {
+  margin: 10px;
+}
+
+.message--machine {
+  background: #def;
+}
+
+.message--human {
+  clear: both;
+  float: right;
+  background: #fed;
+  margin-left: auto;
+}
+
+.input {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  /*width: 100%;*/
+  /*text-align: right;*/
+  /*padding: 0 20px;*/
+}
+
+@media (min-width: 720px) {
+  .input {
+    right: calc(50% + 20px);
+  }
+}
+
+.input input[type="text"] {
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding: 13px 19px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
+
+.input button {
+  font: inherit;
+  border-radius: 5px;
+  margin: 0 10px;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 13px 19px;
+  outline: none;
+}
+
+.input button:hover {
+  background: #def;
+  padding: 14px 20px;
+  border: 0;
+}
+
+.input button:active {
+  background: #222;
+  color: #fff;
+  padding: 14px 20px;
+  border: 0;
+}
+
+.input input[type="submit"] {
+  display: none;
+}
+
+.decisionTree {
+  display: none;
+  font-size: 14px;
+  background: #def;
+  flex: 1;
+  /*overflow: auto;*/
+  padding: 10px;
+}
+
+@media (min-width: 720px) {
+  .decisionTree {
+    display: block;
+  }
+}
+
+.decisionTree__selectOption {
+  background: #ef0;
+  display: flex;
+}
+
+.decisionTreeNode {
+  position: relative;
+  /*border: 1px solid rgba(0, 0, 0, 0.2);*/
+  margin: 0 10px;
+  /*padding: 10px;*/
+}
+
+.decisionTreeNode:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-top: 1px solid #888;
+  top: 10px;
+  left: -8px;
+  width: 5px;
+}
+
+.decisionTreeNode:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-left: 1px solid #888;
+  top: -3px;
+  left: -8px;
+  height: 13px;
+}
+
+.decisionTree > .decisionTreeNode:before,
+.decisionTree > .decisionTreeNode:after {
+  display: none;
+}
